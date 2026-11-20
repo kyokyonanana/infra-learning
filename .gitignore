@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# 秘密情報（絶対にコミットしない）
+.env
+*.pem
+*.key
+kubeconfig*
+
+# エディタ・一時ファイル
+*.swp
+*.log
+.vscode/
