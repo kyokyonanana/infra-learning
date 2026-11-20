@@ -1,0 +1,18 @@
+IMAGE          CREATED         CREATED BY                                       SIZE      COMMENT
+6784fb0834aa   19 months ago   CMD ["nginx" "-g" "daemon off;"]                 0B        buildkit.dockerfile.v0
+<missing>      19 months ago   STOPSIGNAL SIGQUIT                               0B        buildkit.dockerfile.v0
+<missing>      19 months ago   EXPOSE map[80/tcp:{}]                            0B        buildkit.dockerfile.v0
+<missing>      19 months ago   ENTRYPOINT ["/docker-entrypoint.sh"]             0B        buildkit.dockerfile.v0
+<missing>      19 months ago   COPY 30-tune-worker-processes.sh /docker-ent…   16.4kB    buildkit.dockerfile.v0
+<missing>      19 months ago   COPY 20-envsubst-on-templates.sh /docker-ent…   12.3kB    buildkit.dockerfile.v0
+<missing>      19 months ago   COPY 15-local-resolvers.envsh /docker-entryp…   12.3kB    buildkit.dockerfile.v0
+<missing>      19 months ago   COPY 10-listen-on-ipv6-by-default.sh /docker…   12.3kB    buildkit.dockerfile.v0
+<missing>      19 months ago   COPY docker-entrypoint.sh / # buildkit           8.19kB    buildkit.dockerfile.v0
+<missing>      19 months ago   RUN /bin/sh -c set -x     && groupadd --syst…   122MB     buildkit.dockerfile.v0
+<missing>      19 months ago   ENV DYNPKG_RELEASE=1~bookworm                    0B        buildkit.dockerfile.v0
+<missing>      19 months ago   ENV PKG_RELEASE=1~bookworm                       0B        buildkit.dockerfile.v0
+<missing>      19 months ago   ENV NJS_RELEASE=1~bookworm                       0B        buildkit.dockerfile.v0
+<missing>      19 months ago   ENV NJS_VERSION=0.8.10                           0B        buildkit.dockerfile.v0
+<missing>      19 months ago   ENV NGINX_VERSION=1.27.5                         0B        buildkit.dockerfile.v0
+<missing>      19 months ago   LABEL maintainer=NGINX Docker Maintainers <d…   0B        buildkit.dockerfile.v0
+<missing>      19 months ago   # debian.sh --arch 'amd64' out/ 'bookworm' '…   85.2MB    debuerreotype 0.15
