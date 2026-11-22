@@ -11,3 +11,8 @@ kubeconfig*
 *.swp
 *.log
 .vscode/
+
+# バックアップ・ダンプ
+*.tar.gz
+*.dump
+*-backup.sql
