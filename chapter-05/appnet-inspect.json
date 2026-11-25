@@ -1,0 +1,38 @@
+[
+    {
+        "Name": "appnet",
+        "Id": "e5da67ba6119b73f74a90d5e7ad7d6ac759ca2eaa8274a60611ab41d7448df2e",
+        "Created": "2026-11-24T05:33:56.257774892Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.18.0.0/16",
+                    "Gateway": "172.18.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "1f2c490b97935a29020726c01f2d75f88cbfa52fd3f08cd1c10f6937247a12bb": {
+                "Name": "myapp",
+                "EndpointID": "70a2f6d1847d8f5ec28ad1fcc176617460c4133dcb55b909de38c4589f129305",
+                "MacAddress": "02:42:ac:12:00:02",
+                "IPv4Address": "172.18.0.2/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {}
+    }
+]
