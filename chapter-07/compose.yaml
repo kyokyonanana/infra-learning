@@ -1,0 +1,24 @@
+name: ch07
+
+services:
+  web:
+    build: ./go-app
+    ports:
+      - "127.0.0.1:8082:8080"
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 64M
+          pids: 100
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
