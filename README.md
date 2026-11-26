@@ -9,4 +9,5 @@ Docker -> Kubernetes 運用保守エンジニアになるための学習リポ�
 - [x] 第3章 Dockerfileでイメージを作る
 - [x] 第4章 データの永続化
 - [x] 第5章 コンテナのネットワーク
+- [x] 第6章 Docker Composeで複数コンテナを管理
 
