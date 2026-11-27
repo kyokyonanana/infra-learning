@@ -13,4 +13,4 @@ spec:
         - containerPort: 5000
       env:
         - name: APP_VERSION
-          value: "1.0"
+          value: "1.5"
