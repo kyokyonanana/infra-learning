@@ -1,0 +1,14 @@
+NAMESPACE            NAME                                          READY   STATUS    RESTARTS   AGE   IP           NODE                  NOMINATED NODE   READINESS GATES
+kube-system          coredns-668d6bf9bc-b6dvb                      1/1     Running   0          20h   10.244.2.3   learn-worker2         <none>           <none>
+kube-system          coredns-668d6bf9bc-fv69c                      1/1     Running   0          20h   10.244.2.2   learn-worker2         <none>           <none>
+kube-system          etcd-learn-control-plane                      1/1     Running   0          22h   172.18.0.4   learn-control-plane   <none>           <none>
+kube-system          kindnet-lqwxs                                 1/1     Running   0          22h   172.18.0.4   learn-control-plane   <none>           <none>
+kube-system          kindnet-pp4lw                                 1/1     Running   0          22h   172.18.0.3   learn-worker2         <none>           <none>
+kube-system          kindnet-qntb8                                 1/1     Running   0          22h   172.18.0.2   learn-worker          <none>           <none>
+kube-system          kube-apiserver-learn-control-plane            1/1     Running   0          22h   172.18.0.4   learn-control-plane   <none>           <none>
+kube-system          kube-controller-manager-learn-control-plane   1/1     Running   0          22h   172.18.0.4   learn-control-plane   <none>           <none>
+kube-system          kube-proxy-q9v4x                              1/1     Running   0          22h   172.18.0.4   learn-control-plane   <none>           <none>
+kube-system          kube-proxy-sccsb                              1/1     Running   0          22h   172.18.0.3   learn-worker2         <none>           <none>
+kube-system          kube-proxy-wxllq                              1/1     Running   0          22h   172.18.0.2   learn-worker          <none>           <none>
+kube-system          kube-scheduler-learn-control-plane            1/1     Running   0          22h   172.18.0.4   learn-control-plane   <none>           <none>
+local-path-storage   local-path-provisioner-58cc7856b6-6m4hm       1/1     Running   0          20h   10.244.2.4   learn-worker2         <none>           <none>

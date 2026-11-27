@@ -11,4 +11,5 @@ Docker -> Kubernetes 運用保守エンジニアになるための学習リポ�
 - [x] 第5章 コンテナのネットワーク
 - [x] 第6章 Docker Composeで複数コンテナを管理
 - [x] 第7章 実務で必要なDockerの知識
+- [x] 第8章 Kubernetesのアーキテクチャとkindクラスタ構築
 
