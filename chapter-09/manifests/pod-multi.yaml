@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multi
+  labels:
+    app: multi
+spec:
+  volumes:
+    - name: shared
+      emptyDir: {}
+  initContainers:
+    - name: prepare
+      image: busybox:1.36
+      command: ["sh", "-c", "echo '<h1>prepared by init</h1>' > /work/index.html"]
+      volumeMounts:
+        - name: shared
+          mountPath: /work
+  containers:
+    - name: nginx
+      image: nginx:1.27-alpine
+      volumeMounts:
+        - name: shared
+          mountPath: /usr/share/nginx/html
+    - name: sidecar
+      image: busybox:1.36
+      command: ["sh", "-c", "while true; do wget -qO- http://localhost:80 >/dev/null && echo \"$(date) nginx is up\"; sleep 5; done"]
